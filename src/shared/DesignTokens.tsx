@@ -26,3 +26,7 @@ export const BorderRadiuses = {
     NONE: '0',
     ONE: '8px',
 };
+
+export const FontFamilies = {
+    ONE: "'Poppins', sans-serif",
+};
