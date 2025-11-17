@@ -1,10 +1,14 @@
 import { NormalizeStyles } from './shared/NormalizeStyles';
 
+import Navbar from './components/Navbar';
+import TestimonialsCarousel from './components/TestimonialsCarousel';
+
 function App() {
   return (
     <div className='container'>
       <NormalizeStyles />
-      <h1 className='text-center'>Hello, sinergIA!</h1>
+      <Navbar />
+      <TestimonialsCarousel />
     </div>
   )
 }

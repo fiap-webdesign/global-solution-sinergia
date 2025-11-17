@@ -3,7 +3,8 @@ export const Colors = {
     GREEN_OPACITY: '#E5F4F2',
     ORANGE: '#FFD883',
     PINK: '#F2BFAF',
-    GRAY: '#F8F9FF'
+    GRAY: '#F8F9FF',
+    TEXT: '#2D2D2D',
 };
 
 export const Spaces = {
