@@ -28,7 +28,7 @@ export default function Header() {
 
                     <div className="right">
                         <HeroImage
-                            src="/assets/imagens/heroIllustration.png"
+                            src="../../../src/assets/images/header/manwithalaptop.png"
                             alt="Homem com laptop"
                         />
                     </div>

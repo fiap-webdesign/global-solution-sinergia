@@ -1,10 +1,10 @@
-import { 
-    Section, 
-    CardsGrid, 
-    Card, 
+import {
+    Section,
+    CardsGrid,
+    Card,
     CardImageWrapper,
-    CardImage, 
-    CardTitle, 
+    CardImage,
+    CardTitle,
     CardText,
 } from "./styles";
 
@@ -18,7 +18,7 @@ export default function Benefits() {
 
                     <Card>
                         <CardImageWrapper>
-                            <CardImage src="/assets/imagens/professional.png" />
+                            <CardImage src="../../../src/assets/images/benefits/professional.png" />
                         </CardImageWrapper>
 
                         <CardTitle>Desenvolvimento Profissional Contínuo</CardTitle>
@@ -31,7 +31,7 @@ export default function Benefits() {
 
                     <Card>
                         <CardImageWrapper>
-                            <CardImage src="/assets/imagens/connecting.png" />
+                            <CardImage src="../../../src/assets/images/benefits/connecting.png" />
                         </CardImageWrapper>
 
                         <CardTitle>Conexão com Caminhos de Transformação</CardTitle>
@@ -44,7 +44,7 @@ export default function Benefits() {
 
                     <Card>
                         <CardImageWrapper>
-                            <CardImage src="/assets/imagens/accessible.png" />
+                            <CardImage src="../../../src/assets/images/benefits/accessible.png" />
                         </CardImageWrapper>
 
                         <CardTitle>Experiência Acessível para Todas as Jornadas</CardTitle>
