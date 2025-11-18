@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { Colors, Spaces, FontFamilies, BorderRadiuses } from "../../shared/DesignTokens";
+import { Colors, Spaces, FontFamilies } from "../../shared/DesignTokens";
 
 // Estilizações da seção de testemunhos
 export const ContainerTestimonials = styled.section`

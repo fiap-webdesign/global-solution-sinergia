@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { Spaces, FontFamilies } from "../../shared/DesignTokens";
+import { Spaces, FontFamilies, Colors } from "../../shared/DesignTokens";
 
 export const Section = styled.section`
+    background: ${Colors.GRAY};
     padding: ${Spaces.SEVEN} 0;
     font-family: ${FontFamilies.ONE};
 `;
@@ -21,7 +22,7 @@ export const CardsGrid = styled.div`
 `;
 
 export const Card = styled.div`
-    background: #fff;
+    background: white;
     padding: ${Spaces.FOUR};
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -43,9 +44,11 @@ export const CardTitle = styled.h3`
     font-size: 20px;
     margin-bottom: ${Spaces.ONE};
     font-weight: 600;
+    text-align: center;
 `;
 
 export const CardText = styled.p`
     font-size: 15px;
     line-height: 1.5;
+    text-align: center;
 `;
