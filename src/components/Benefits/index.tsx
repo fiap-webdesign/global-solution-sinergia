@@ -8,6 +8,10 @@ import {
     CardText,
 } from "./styles";
 
+import professionalImg from "../../assets/images/benefits/professional.png";
+import connectingImg from "../../assets/images/benefits/connecting.png";
+import accessibleImg from "../../assets/images/benefits/accessible.png";
+
 export default function Benefits() {
     return (
         <Section>
@@ -18,7 +22,7 @@ export default function Benefits() {
 
                     <Card>
                         <CardImageWrapper>
-                            <CardImage src="../../../src/assets/images/benefits/professional.png" />
+                            <CardImage src={professionalImg} alt="Desenvolvimento Profissional" />
                         </CardImageWrapper>
 
                         <CardTitle>Desenvolvimento Profissional Contínuo</CardTitle>
@@ -31,7 +35,7 @@ export default function Benefits() {
 
                     <Card>
                         <CardImageWrapper>
-                            <CardImage src="../../../src/assets/images/benefits/connecting.png" />
+                            <CardImage src={connectingImg} alt="Conexão com Caminhos de Transformação" />
                         </CardImageWrapper>
 
                         <CardTitle>Conexão com Caminhos de Transformação</CardTitle>
@@ -44,7 +48,7 @@ export default function Benefits() {
 
                     <Card>
                         <CardImageWrapper>
-                            <CardImage src="../../../src/assets/images/benefits/accessible.png" />
+                            <CardImage src={accessibleImg} alt="Experiência Acessível" />
                         </CardImageWrapper>
 
                         <CardTitle>Experiência Acessível para Todas as Jornadas</CardTitle>
