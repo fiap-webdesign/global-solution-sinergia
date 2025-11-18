@@ -1,6 +1,6 @@
 // AccordionFaq.styles.ts
 import styled from "styled-components";
-import { Spaces, BorderRadiuses, FontFamilies, Colors } from "../../shared/DesignTokens";
+import { Spaces, BorderRadiuses, FontFamilies } from "../../shared/DesignTokens";
 
 export const Accordion = styled.div`
     width: 70%;

@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/Header";
 import AccordionFaq from "../../components/AccordionFaq/Index";
 import Benefits from "../../components/Benefits";
