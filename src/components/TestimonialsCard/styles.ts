@@ -1,28 +1,61 @@
 import styled from "styled-components";
-import { Colors, Spaces, BorderRadiuses, FontFamilies } from "../../shared/DesignTokens";
+import {
+  Colors,
+  Spaces,
+  BorderRadiuses,
+  FontFamilies,
+} from "../../shared/DesignTokens";
 
 export const Card = styled.div`
-  display: flex;
-  gap: ${Spaces.THREE};
-  align-items: flex-start;
   background: white;
-  padding: ${Spaces.FOUR};
   border-radius: ${BorderRadiuses.ONE};
-  box-shadow: 0 6px 18px ${Colors.TEXT};
-  max-width: 540px;
+  padding: ${Spaces.FOUR};
+  text-align: center;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.06);
+  max-width: 420px;
   margin: 0 auto;
 
   .photo {
-    width: ${Spaces.NINE};
-    height: ${Spaces.NINE};
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
-    flex-shrink: 0;
+    margin-bottom: ${Spaces.TWO};
   }
 
-  .info { flex: 1; }
-  .name { font-family: ${FontFamilies.ONE}; font-weight: 600; margin: 0 0 ${Spaces.ONE_HALF} 0; }
-  .course { margin: 0 0 ${Spaces.TWO} 0; color: ${Colors.TEXT}; font-size: 0.95rem; }
-  .feedback { margin: 0 0 ${Spaces.THREE} 0; color: ${Colors.TEXT}; line-height: 1.5; }
-  .stars { color: ${Colors.GREEN}; font-size: 1.1rem; }
+  .name {
+    font-family: ${FontFamilies.ONE};
+    font-weight: 600;
+    font-size: ${Spaces.TWO};
+    margin-bottom: ${Spaces.ONE_HALF};
+    color: ${Colors.TEXT};
+  }
+
+  .course {
+    font-size: ${Spaces.TWO};
+    color: ${Colors.TEXT};
+    margin-bottom: ${Spaces.THREE};
+  }
+
+  .text {
+    font-size: ${Spaces.TWO};
+    line-height: 1.6;
+    color: ${Colors.TEXT};
+    margin-bottom: ${Spaces.THREE};
+  }
+
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .star {
+    font-size: 1.6rem;
+    color: #d8d8d8; /* cinza da estrela vazia */
+  }
+
+  .star.filled {
+    color: ${Colors.ORANGE};
+  }
 `;

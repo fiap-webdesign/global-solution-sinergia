@@ -7,7 +7,7 @@ export const ContainerTestimonials = styled.section`
     padding: ${Spaces.SEVEN} 0;
 
     .title { font-family: ${FontFamilies.ONE}; color: ${Colors.TEXT}; font-size: 2rem; margin-bottom: ${Spaces.ONE}; }
-    .subtitle { color: #666; margin-bottom: ${Spaces.FOUR}; }
+    .subtitle { color: ${Colors.TEXT}; margin-bottom: ${Spaces.FOUR}; text-align: center; }
 
     .my-swiper { max-width: 960px; margin: 0 auto; }
 
