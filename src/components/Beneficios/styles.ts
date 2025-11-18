@@ -1,0 +1,61 @@
+// styles.ts
+import styled from "styled-components";
+import { Spaces, FontFamilies } from "../../shared/DesignTokens";
+
+export const Section = styled.section`
+    padding: ${Spaces.SEVEN} 0;
+    font-family: ${FontFamilies.ONE};
+`;
+
+export const SectionTitle = styled.h2`
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: ${Spaces.FIVE};
+    font-weight: 600;
+`;
+
+export const CardsGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: ${Spaces.FOUR};
+
+    /* TABLET */
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
+`;
+
+export const Card = styled.div`
+    background: #fff;
+    padding: ${Spaces.FOUR};
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+`;
+
+export const CardImageWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: ${Spaces.THREE};
+`;
+
+export const CardImage = styled.img`
+    width: 130px;
+    height: auto;
+`;
+
+export const CardTitle = styled.h3`
+    font-size: 20px;
+    margin-bottom: ${Spaces.ONE};
+    font-weight: 600;
+`;
+
+export const CardText = styled.p`
+    font-size: 15px;
+    line-height: 1.5;
+`;
