@@ -23,7 +23,7 @@ function AccordionFaq() {
     const isItemOpen = (id: string) => openIds.includes(id);
 
     return (
-        <Accordion>
+        <Accordion id="faq">
             <AccordionContainer>
                 <h2 className="accordion-title">Perguntas Frequentes (FAQs)</h2>
 
