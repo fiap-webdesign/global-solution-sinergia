@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { FontFamilies, Spaces } from "./DesignTokens";
+import { FontColors, FontFamilies, Spaces } from "./DesignTokens";
 
 export const NormalizeStyles = createGlobalStyle`
     body {
@@ -7,5 +7,18 @@ export const NormalizeStyles = createGlobalStyle`
         padding: ${Spaces.NONE};
         box-sizing: border-box;
         font-family: ${FontFamilies.ONE};
+        color: ${FontColors.PRIMARY};
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: ${Spaces.TWO};
     }
 `;

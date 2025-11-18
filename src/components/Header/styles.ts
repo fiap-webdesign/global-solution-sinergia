@@ -1,9 +1,8 @@
-// styles.ts
 import styled from "styled-components";
-import { Colors, Spaces, BorderRadiuses, FontFamilies } from "../../shared/DesignTokens";
+import { Colors, Spaces, BorderRadiuses, FontFamilies, FontColors } from "../../shared/DesignTokens";
 
 export const HeroSection = styled.section`
-    background: #F7DCA4;
+    background: ${Colors.ORANGE};
     padding: ${Spaces.EIGHT} 0;
     display: flex;
     align-items: center;
@@ -15,7 +14,6 @@ export const HeroContainer = styled.div`
     align-items: center;
     gap: ${Spaces.SIX};
 
-    /* TABLET E MOBILE */
     @media (max-width: 900px) {
         flex-direction: column-reverse;
         text-align: center;
@@ -35,7 +33,7 @@ export const HeroTitle = styled.h1`
 
 export const HeroSubtitle = styled.p`
     font-size: 18px;
-    color: #333;
+    color: ${FontColors.PRIMARY};
     max-width: 420px;
     margin-bottom: ${Spaces.THREE};
 

@@ -6,15 +6,13 @@ import {
     CardImage, 
     CardTitle, 
     CardText,
-    SectionTitle
 } from "./styles";
 
-export default function Beneficios() {
+export default function Benefits() {
     return (
         <Section>
             <div className="container">
-
-                <SectionTitle>Benefícios</SectionTitle>
+                <h2>Benefícios</h2>
 
                 <CardsGrid>
 

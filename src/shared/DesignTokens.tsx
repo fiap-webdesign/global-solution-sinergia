@@ -30,3 +30,7 @@ export const BorderRadiuses = {
 export const FontFamilies = {
     ONE: "'Poppins', sans-serif",
 };
+
+export const FontColors = {
+    PRIMARY: '#2D2D2D',
+};

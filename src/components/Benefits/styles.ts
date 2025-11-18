@@ -1,4 +1,3 @@
-// styles.ts
 import styled from "styled-components";
 import { Spaces, FontFamilies } from "../../shared/DesignTokens";
 
@@ -7,24 +6,15 @@ export const Section = styled.section`
     font-family: ${FontFamilies.ONE};
 `;
 
-export const SectionTitle = styled.h2`
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: ${Spaces.FIVE};
-    font-weight: 600;
-`;
-
 export const CardsGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: ${Spaces.FOUR};
 
-    /* TABLET */
     @media (max-width: 900px) {
         grid-template-columns: 1fr 1fr;
     }
 
-    /* MOBILE */
     @media (max-width: 900px) {
         grid-template-columns: 1fr;
     }
