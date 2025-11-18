@@ -14,8 +14,8 @@ import {
 import phoneIcon from "../../assets/icons/phone.svg";
 import emailIcon from "../../assets/icons/email.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
-import dribbbleIcon from "../../assets/icons/_tmp_dribbble.svg";
-import behanceIcon from "../../assets/icons/_tmp_behance.svg";
+import dribbbleIcon from "../../assets/icons/dribbble.svg";
+import behanceIcon from "../../assets/icons/behance.svg";
 import twitterIcon from "../../assets/icons/twitter.svg";
 import contactIcon from "../../assets/icons/contact.svg";
 
