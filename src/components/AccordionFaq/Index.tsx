@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import {
     Accordion,
+    AccordionContainer,
     AccordionButton,
     AccordionBody
 } from './styles';
@@ -23,30 +24,32 @@ function AccordionFaq() {
 
     return (
         <Accordion>
-            <h2 className="accordion-title">Perguntas Frequentes (FAQs)</h2>
+            <AccordionContainer>
+                <h2 className="accordion-title">Perguntas Frequentes (FAQs)</h2>
 
-            <div className="accordion">
-                {items.map((item) => (
-                    <div key={item.id} className="accordion-item">
-                        <h2 className="accordion-header">
-                            <AccordionButton
-                                className={`accordion-button ${isItemOpen(item.id) ? "" : "collapsed"}`}
-                                onClick={() => toggle(item.id)}
+                <div className="accordion">
+                    {items.map((item) => (
+                        <div key={item.id} className="accordion-item">
+                            <h2 className="accordion-header">
+                                <AccordionButton
+                                    className={`accordion-button ${isItemOpen(item.id) ? "" : "collapsed"}`}
+                                    onClick={() => toggle(item.id)}
+                                >
+                                    {item.title}
+                                </AccordionButton>
+                            </h2>
+
+                            <div
+                                className={`accordion-collapse collapse ${isItemOpen(item.id) ? "show" : ""}`}
                             >
-                                {item.title}
-                            </AccordionButton>
-                        </h2>
-
-                        <div
-                            className={`accordion-collapse collapse ${isItemOpen(item.id) ? "show" : ""}`}
-                        >
-                            <AccordionBody className="accordion-body">
-                                {item.content}
-                            </AccordionBody>
+                                <AccordionBody className="accordion-body">
+                                    {item.content}
+                                </AccordionBody>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </AccordionContainer>
         </Accordion>
     );
 }
