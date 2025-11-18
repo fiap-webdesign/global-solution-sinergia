@@ -31,7 +31,7 @@ export default function Home() {
 
       <ContainerTestimonials id="testimonials">
         <div className="container">
-          <h2 className="title">Histórias Reais</h2>
+          <h2 className="title">Histórias Reais ⭐</h2>
           <p className="subtitle">Como a SinergIA ajudou nossos usuários</p>
 
           <Swiper
