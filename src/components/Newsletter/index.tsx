@@ -29,14 +29,14 @@ export default function Newsletter() {
                         </ContactItem>
 
                         <ContactItem>
-                            <img src="/assets/icones/mail.svg" />
+                            <img src="/assets/icones/email.svg" />
                             <span>contato@chatbot.com</span>
                         </ContactItem>
 
                         <SocialTitle>Nos siga nas redes</SocialTitle>
 
                         <SocialWrapper>
-                            <img src="/assets/social/insta.svg" />
+                            <img src="/assets/social/instagram.svg" />
                             <img src="/assets/social/dribbble.svg" />
                             <img src="/assets/social/behance.svg" />
                             <img src="/assets/social/twitter.svg" />
@@ -45,7 +45,7 @@ export default function Newsletter() {
 
                     <RightSide>
                         <InputGroup>
-                            <img src="/assets/icones/user.svg" />
+                            <img src="/assets/icones/contact.svg" />
                             <Input placeholder="Nome completo" />
                         </InputGroup>
 
