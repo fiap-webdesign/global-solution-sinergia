@@ -7,6 +7,8 @@ import {
     HeroImage
 } from "./styles";
 
+import manWithLaptop from "../../assets/images/header/manwithalaptop.png";
+
 export default function Header() {
     return (
         <HeroSection>
@@ -28,8 +30,8 @@ export default function Header() {
 
                     <div className="right">
                         <HeroImage
-                            src="../../../src/assets/images/header/manwithalaptop.png"
-                            alt="Homem com laptop"
+                            src={manWithLaptop}
+                            alt="Homem usando um laptop"
                         />
                     </div>
 
