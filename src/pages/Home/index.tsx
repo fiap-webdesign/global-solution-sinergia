@@ -1,7 +1,8 @@
-// src/pages/Home/index.tsx
 import React from "react";
 import Header from "../../components/Header";
+import AccordionFaq from "../../components/AccordionFaq/Index";
 import Benefits from "../../components/Benefits";
+import Footer from "../../components/Footer";
 import Newsletter from "../../components/Newsletter";
 import TestimonialCard from "../../components/TestimonialsCard";
 import { ContainerTestimonials, ContainerChatBot } from "./styles";
@@ -28,6 +29,7 @@ export default function Home() {
     <>
       <Header />
       <Benefits />
+      <AccordionFaq />
 
       <ContainerTestimonials id="testimonials">
         <div className="container">
@@ -60,6 +62,7 @@ export default function Home() {
       </ContainerChatBot>
 
       <Newsletter />
+      <Footer />
     </>
   );
 }
