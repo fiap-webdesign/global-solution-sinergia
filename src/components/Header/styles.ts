@@ -59,6 +59,8 @@ export const HeroButtons = styled.div`
         color: #fff;
         border-radius: ${BorderRadiuses.ONE};
         font-weight: 600;
+        text-decoration: none;
+        display: inline-block; 
     }
 
 `;

@@ -2,9 +2,15 @@
 import styled from "styled-components";
 import { Spaces, BorderRadiuses, FontFamilies } from "../../shared/DesignTokens";
 
-export const Accordion = styled.div`
+export const Accordion = styled.section`
+    background: ${Colors.GRAY};
+    padding: ${Spaces.FOUR}          
+`;
+
+export const AccordionContainer = styled.div`
     width: 70%;
     margin: ${Spaces.FIVE} auto;
+    background: ${Colors.GRAY};
 
     .accordion-title {
         text-align: center;
