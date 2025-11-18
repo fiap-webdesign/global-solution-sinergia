@@ -22,7 +22,7 @@ export const CardsGrid = styled.div`
 `;
 
 export const Card = styled.div`
-    background: #fbfbfb;
+    background: #fcfcfc;
     padding: ${Spaces.FOUR};
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
