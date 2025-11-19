@@ -17,15 +17,22 @@ export default async function handler(req: any, res: any) {
       messages: [
         {
           role: "system",
-          content: "Responda sempre de forma objetiva, direta, clara e resumida. Evite introduções óbvias e comece direto no ponto. Formate a resposta usando Markdown simples: listas, subtítulos curtos e destaques. Não use textos muito longos.",
+          content: `
+            Você é um assistente focado exclusivamente em carreira, entrevistas, currículos e mercado de trabalho.
+
+            Regra:
+            - Se a pergunta NÃO estiver relacionada a emprego, carreira, entrevistas, currículo, soft skills, hard skills ou desenvolvimento profissional: responda apenas com:
+            "Desculpe, só posso responder dúvidas relacionadas a carreira, vagas, entrevistas e desenvolvimento profissional."
+
+            - Caso a pergunta seja relevante, responda de forma direta, clara, objetiva e resumida.
+            - Formate a resposta usando Markdown simples (listas, tópicos, subtítulos curtos).
+            - Evite introduções óbvias e vá direto ao ponto.
+      `
         },
-        { 
-          role: "user", 
-          content: message 
-        }
+        { role: "user", content: message }
       ],
-        max_tokens: 800,
-        temperature: 0.4,
+      max_tokens: 800,
+      temperature: 0.4,
     });
 
     const reply = completion.choices[0].message.content;
