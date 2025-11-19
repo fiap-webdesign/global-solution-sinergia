@@ -27,13 +27,48 @@ export const ContainerChatBot = styled.div`
 `;
 
 // Estilizações da seção Sobre SinergIA
-export const ContainerAbout = styled.section`
+export const ContainerAbout = styled.div`
   background-color: ${Colors.GREEN_OPACITY};
   padding: ${Spaces.FOUR};
   margin-bottom: ${Spaces.FIVE};
   border-radius: ${BorderRadiuses.TWO};
 `;
 
+// Estilizações da seção Sobre SinergIA
+export const ContainerHowItWorks = styled.div`
+  background-color: ${Colors.PINK};
+  margin-bottom: ${Spaces.FIVE};
+  border-radius: ${BorderRadiuses.TWO};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: ${Spaces.FOUR};
+  padding: ${Spaces.NONE};
+
+  .info {
+    padding: ${Spaces.FOUR};
+  }
+
+  img {
+    margin-left: auto;
+    margin-top: auto;
+    max-width: 40%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: ${Spaces.NONE};
+
+    img {
+      margin-left: unset;
+      max-width: 100%;
+    }
+  }
+`;
+
+// Estilizações do divisor
 export const Divider = styled.hr`
     border: none;
     border-top: 4px solid ${Colors.GREEN};

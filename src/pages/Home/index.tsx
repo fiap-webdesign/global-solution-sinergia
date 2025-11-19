@@ -4,7 +4,7 @@ import Benefits from "../../components/Benefits";
 import Footer from "../../components/Footer";
 import Newsletter from "../../components/Newsletter";
 import TestimonialCard from "../../components/TestimonialsCard";
-import { ContainerTestimonials, ContainerChatBot, ContainerAbout, Divider } from "./styles";
+import { ContainerTestimonials, ContainerChatBot, ContainerAbout, Divider, ContainerHowItWorks } from "./styles";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -15,6 +15,7 @@ import img1 from "../../../src/assets/images/testimonials/testimonial-1.png";
 import img2 from "../../../src/assets/images/testimonials/testimonial-2.png";
 import img3 from "../../../src/assets/images/testimonials/testimonial-3.png";
 import img4 from "../../../src/assets/images/testimonials/testimonial-4.png";
+import HowItWorks from "../../assets/images/how-it-works.png";
 import ChatBot from "../../components/ChatBot";
 
 export default function Home() {
@@ -29,22 +30,39 @@ export default function Home() {
     <>
       <Header />
 
-      <ContainerAbout className="container">
-        <h2>O que é SinergIA?</h2>
-        <p>A plataforma SinergIA foi desenvolvida para ajudar profissionais iniciantes na jornada de ingresso no mercado de trabalho. Para isso, combinamos inteligência artificial com orientação personalizada, oferecendo suporte prático e direcionado para quem deseja iniciar ou se recolocar profissionalmente, permitindo que os usuários:</p>
-        <ul>
-          <li>Simulem entrevistas reais, recebendo feedback instantâneo.</li>
-          <li>Criem roadmaps de estudos personalizados, de acordo com a área de interesse.</li>
-          <li>Receba dicas e recomendações práticas para organizar a jornada de entrada no mercado de trabalho.</li>
-        </ul>
-        <p className="mb-0">A sinergIA transforma a tecnologia em uma verdadeira aliada estratégica, capaz de potencializar o aprendizado, fortalecer a confiança do usuário, ampliar oportunidades e apoiar o desenvolvimento pessoal.</p>
-      </ContainerAbout>
+      <section className="container">
+        <ContainerAbout>
+          <h2>O que é SinergIA?</h2>
+          <p>A plataforma SinergIA foi desenvolvida para ajudar profissionais iniciantes na jornada de ingresso no mercado de trabalho. Para isso, combinamos inteligência artificial com orientação personalizada, oferecendo suporte prático e direcionado para quem deseja iniciar ou se recolocar profissionalmente, permitindo que os usuários:</p>
+          <ul>
+            <li>Simulem entrevistas reais, recebendo feedback instantâneo.</li>
+            <li>Criem roadmaps de estudos personalizados, de acordo com a área de interesse.</li>
+            <li>Receba dicas e recomendações práticas para organizar a jornada de entrada no mercado de trabalho.</li>
+          </ul>
+          <p className="mb-0">A sinergIA transforma a tecnologia em uma verdadeira aliada estratégica, capaz de potencializar o aprendizado, fortalecer a confiança do usuário, ampliar oportunidades e apoiar o desenvolvimento pessoal.</p>
+        </ContainerAbout>
+      </section>
 
       <Benefits />
 
+      <section className="container">
+        <ContainerHowItWorks className="container">
+          <div className="info">
+            <h2 className="text-start">Como funciona</h2>
+            <p className="mb-0 fw-semibold">Escolha uma opção pronta</p>
+            <p>Clique em “Simular entrevista” ou “Gerar roadmap” para iniciar automaticamente.</p>
+
+            <p className="mb-0 fw-semibold">Ou comece digitando</p>
+            <p className="mb-0">Escreva o que você precisa e o chatbot gera a resposta na hora.</p>
+          </div>
+          <img src={HowItWorks} alt="Ilustração de como a plataforma funciona" />
+        </ContainerHowItWorks>
+      </section>
+
+
       <ContainerChatBot id="chatbot">
         <ChatBot />
-      </ContainerChatBot>   
+      </ContainerChatBot>
 
       <ContainerTestimonials id="testimonials">
         <div className="container">
@@ -70,9 +88,9 @@ export default function Home() {
         </div>
       </ContainerTestimonials>
 
-       <AccordionFaq />
+      <AccordionFaq />
 
-        <Divider />
+      <Divider />
 
       <Newsletter />
       <Footer />
