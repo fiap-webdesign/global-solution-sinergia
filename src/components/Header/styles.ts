@@ -22,7 +22,8 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-    font-size: 42px;
+    font-size: 67px;
+     max-width: 500px;
     font-family: ${FontFamilies.ONE};
     font-weight: 800;
     margin-bottom: ${Spaces.TWO};
@@ -33,12 +34,12 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroSubtitle = styled.p`
-    font-size: 18px;
+    font-size: 32px;
     color: ${FontColors.PRIMARY};
-    max-width: 420px;
+    max-width: 600px;
     margin-bottom: ${Spaces.THREE};
 
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         font-size: 16px;
         max-width: 100%;
     }
@@ -68,7 +69,7 @@ export const HeroButtons = styled.div`
 
 export const HeroImage = styled.img`
     width: 100%;
-    max-width: 380px;
+    max-width: 420px;
 
     @media (max-width: 600px) {
         max-width: 260px;
