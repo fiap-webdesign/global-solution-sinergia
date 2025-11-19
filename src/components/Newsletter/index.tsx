@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
     Section,
     LeftSide,
@@ -19,6 +20,27 @@ import twitterIcon from "../../assets/icons/twitter.svg";
 import contactIcon from "../../assets/icons/contact.svg";
 
 export default function Newsletter() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [notification, setNotification] = useState(""); 
+    const [success, setSuccess] = useState(false);
+
+    const handleSubmit = () => { 
+        if (!name || !email) {
+            setNotification("Por favor, preencha todos os campos."); 
+            setSuccess(false);
+            return;
+        }
+
+        setNotification("Inscrição realizada com sucesso!"); 
+        setSuccess(true);
+
+        setName(""); 
+        setEmail(""); 
+
+        setTimeout(() => setNotification(""), 3000);
+    };
+
     return (
         <Section className="container">
             <div className="row">
@@ -52,15 +74,25 @@ export default function Newsletter() {
                 <RightSide>
                     <InputGroup>
                         <img src={contactIcon} alt="Ícone de pessoa" />
-                        <Input placeholder="Nome completo" />
+                        <Input placeholder="Nome completo"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)} />
                     </InputGroup>
 
                     <InputGroup>
                         <img src={emailIcon} alt="Ícone de e-mail" />
-                        <Input placeholder="E-mail" type="email" />
+                        <Input placeholder="E-mail" type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)} />
                     </InputGroup>
 
-                    <SubmitButton>Se inscreva</SubmitButton>
+                    <SubmitButton type="button" onClick={handleSubmit}>Se inscreva</SubmitButton>
+
+                    {notification && (
+                        <div className={`mt-2 alert ${success ? "alert-success" : "alert-danger"}`}>
+                            {notification}
+                        </div>
+                    )}
                 </RightSide>
             </div>
         </Section>
