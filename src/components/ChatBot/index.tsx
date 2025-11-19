@@ -9,6 +9,7 @@ import {
   QuickOptions,
   OptionButton,
 } from "./styles";
+import ReactMarkdown from "react-markdown";
 
 export default function ChatBot() {
   const [messages, setMessages] = useState([
@@ -116,7 +117,7 @@ export default function ChatBot() {
       <MessagesArea>
         {messages.map((m, i) => (
           <Message key={i} $isUser={m.isUser}>
-            {m.text}
+            <ReactMarkdown>{m.text}</ReactMarkdown>
           </Message>
         ))}
 
