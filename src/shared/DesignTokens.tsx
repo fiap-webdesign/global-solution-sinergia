@@ -4,7 +4,7 @@ export const Colors = {
     ORANGE: '#FFD883',
     PINK: '#F2BFAF',
     GRAY: '#F8F9FF',
-    TEXT: '#2D2D2D',
+    DARK_GRAY: '#2D2D2D',
 };
 
 export const Spaces = {

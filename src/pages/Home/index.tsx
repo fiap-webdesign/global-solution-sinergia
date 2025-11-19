@@ -15,6 +15,7 @@ import img1 from "../../../src/assets/images/testimonials/testimonial-1.png";
 import img2 from "../../../src/assets/images/testimonials/testimonial-2.png";
 import img3 from "../../../src/assets/images/testimonials/testimonial-3.png";
 import img4 from "../../../src/assets/images/testimonials/testimonial-4.png";
+import ChatBot from "../../components/ChatBot";
 
 export default function Home() {
   const testimonials = [
@@ -32,7 +33,7 @@ export default function Home() {
 
       <ContainerTestimonials id="testimonials">
         <div className="container">
-          <h2 className="title">Histórias Reais ⭐</h2>
+          <h2 className="mb-2">Histórias Reais ⭐</h2>
           <p className="subtitle">Como a SinergIA ajudou nossos usuários</p>
 
           <Swiper
@@ -55,9 +56,7 @@ export default function Home() {
       </ContainerTestimonials>
 
       <ContainerChatBot>
-        <div className="container">
-          <h2 className="text-center">ChatBot Section</h2>
-        </div>
+        <ChatBot />
       </ContainerChatBot>
 
       <Newsletter />

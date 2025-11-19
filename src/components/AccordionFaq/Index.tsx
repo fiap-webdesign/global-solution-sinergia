@@ -24,8 +24,8 @@ function AccordionFaq() {
 
     return (
         <Accordion id="faq">
-            <AccordionContainer>
-                <h2 className="accordion-title">Perguntas Frequentes (FAQs)</h2>
+            <AccordionContainer className="container">
+                <h2 className="accordion-title">Perguntas Frequentes (FAQ)</h2>
 
                 <div className="accordion">
                     {items.map((item) => (

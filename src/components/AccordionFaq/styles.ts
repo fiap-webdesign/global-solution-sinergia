@@ -3,13 +3,10 @@ import styled from "styled-components";
 import { Spaces, BorderRadiuses, FontFamilies, Colors } from "../../shared/DesignTokens";
 
 export const Accordion = styled.section`
-    background: ${Colors.GRAY};
-    padding: ${Spaces.FOUR}          
+    background: ${Colors.GRAY};     
 `;
 
 export const AccordionContainer = styled.div`
-    width: 70%;
-    margin: ${Spaces.FIVE} auto;
     background: ${Colors.GRAY};
 
     .accordion-title {

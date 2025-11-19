@@ -10,7 +10,6 @@ import {
     SubmitButton
 } from "./styles";
 
-// IMPORTS CORRETOS
 import phoneIcon from "../../assets/icons/phone.svg";
 import emailIcon from "../../assets/icons/email.svg";
 import instaIcon from "../../assets/icons/instagram.svg";

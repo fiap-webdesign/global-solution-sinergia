@@ -30,9 +30,14 @@ export const FooterText = styled.p`
     font-weight: 400;
     width: 100%;
     text-align: left;
+    margin: ${Spaces.NONE};
 
     @media (min-width: 768px) {
         width: 50%;
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
     }
 `;
 
