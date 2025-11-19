@@ -12,7 +12,7 @@ export const AccordionContainer = styled.div`
 `;
 
 export const AccordionButton = styled.button`
-    border-radius: ${BorderRadiuses.TWO};
+    border-radius: ${BorderRadiuses.ONE};
     font-family: ${FontFamilies.ONE};
 `;
 
