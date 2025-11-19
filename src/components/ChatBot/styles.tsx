@@ -24,6 +24,10 @@ export const Message = styled.div<{ $isUser?: boolean }>`
   border-bottom-left-radius: ${(p) => (p.$isUser ? BorderRadiuses.ONE : 0)};
   border-bottom-right-radius: ${(p) => (p.$isUser ? 0 : BorderRadiuses.ONE)};
   border: 1px solid #e4e7eb;
+
+  p {
+    margin: 0.5rem 0;
+  }
 `;
 
 export const InputArea = styled.form`

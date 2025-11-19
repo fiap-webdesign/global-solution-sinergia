@@ -20,7 +20,7 @@ export default function ChatBot() {
 
   const options = [
     "Como me preparar para uma entrevista?",
-    "Quais carreiras estão em alta?",
+    "Quais carreiras estão em alta na área de tecnologia?",
     "Como montar um currículo?",
     "Como conseguir meu primeiro emprego sem experiência?",
     "O que colocar no currículo se nunca trabalhei?",
@@ -32,7 +32,7 @@ export default function ChatBot() {
     "Como me preparar para uma entrevista?":
       "Pesquise profundamente sobre a empresa, seus produtos e cultura. Prepare exemplos reais seguindo a metodologia STAR (Situação, Tarefa, Ação, Resultado). Pratique perguntas comuns, revise seus projetos pessoais e esteja pronto para explicar como você aprende rápido, mesmo sem experiência prévia.",
 
-    "Quais carreiras estão em alta?":
+    "Quais carreiras estão em alta na área de tecnologia?":
       "Em tecnologia, áreas como desenvolvimento web e mobile, análise de dados, cibersegurança, cloud computing, inteligência artificial, suporte técnico e QA estão em expansão. Carreiras ligadas à experiência do usuário, automação e integração de sistemas também têm alta demanda para iniciantes.",
 
     "Como montar um currículo?":
