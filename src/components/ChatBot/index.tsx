@@ -54,7 +54,6 @@ export default function ChatBot() {
     const userMsg = { text, isUser: true };
     setMessages((prev) => [...prev, userMsg]);
 
-    // Resposta default (não chama API)
     if (responses[text]) {
       setMessages((prev) => [...prev, { text: responses[text], isUser: false }]);
       return;
@@ -121,7 +120,6 @@ export default function ChatBot() {
           </Message>
         ))}
 
-        {/* LOADING */}
         {loading && (
           <Message $isUser={false}>
             Digitando...
