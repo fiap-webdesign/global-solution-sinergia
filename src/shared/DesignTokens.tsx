@@ -26,6 +26,7 @@ export const Spaces = {
 export const BorderRadiuses = {
     NONE: '0',
     ONE: '8px',
+    TWO: '16px',
 };
 
 export const FontFamilies = {

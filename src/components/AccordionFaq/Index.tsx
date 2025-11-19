@@ -3,7 +3,6 @@ import { items } from "../AccordionItens/Index";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import {
-    Accordion,
     AccordionContainer,
     AccordionButton,
     AccordionBody
@@ -23,7 +22,7 @@ function AccordionFaq() {
     const isItemOpen = (id: string) => openIds.includes(id);
 
     return (
-        <Accordion id="faq">
+        <section id="faq">
             <AccordionContainer className="container">
                 <h2 className="accordion-title">Perguntas Frequentes (FAQ)</h2>
 
@@ -50,7 +49,7 @@ function AccordionFaq() {
                     ))}
                 </div>
             </AccordionContainer>
-        </Accordion>
+        </section>
     );
 }
 

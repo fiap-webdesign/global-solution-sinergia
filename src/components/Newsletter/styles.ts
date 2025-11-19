@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import { Colors, Spaces, BorderRadiuses, FontFamilies } from "../../shared/DesignTokens";
+import { Colors, Spaces, BorderRadiuses } from "../../shared/DesignTokens";
 
 export const Section = styled.section`
-    padding: ${Spaces.EIGHT} 0;
-    font-family: ${FontFamilies.ONE};
-
     .row {
+        padding: ${Spaces.FOUR};
+        background-color: #FFF;
+        border-radius: ${BorderRadiuses.TWO};
+        border: 1px solid #e4e7eb;   
+        margin: auto;
+        margin-bottom: ${Spaces.FIVE};
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -60,9 +63,8 @@ export const ContactItem = styled.div`
     }
 `;
 
-export const SocialTitle = styled.h4`
-    margin-top: ${Spaces.FOUR};
-    font-weight: 600;
+export const SocialTitle = styled.h3`
+    margin-top: ${Spaces.THREE};
 
     @media (max-width: 900px) {
         text-align: left;
@@ -111,7 +113,8 @@ export const InputGroup = styled.div`
     margin-bottom: ${Spaces.TWO};
     border-radius: ${BorderRadiuses.ONE};
     display: flex;
-    align-items: center;
+    align-items: center;        
+    border: 1px solid #e4e7eb;   
     gap: ${Spaces.ONE};
 
     img {

@@ -9,7 +9,7 @@ import {
 
 export const Card = styled.div`
   background: white;
-  border-radius: ${BorderRadiuses.ONE};
+  border-radius: ${BorderRadiuses.TWO};
   padding: ${Spaces.FOUR};
   text-align: center;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.06);

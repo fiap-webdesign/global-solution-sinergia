@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BorderRadiuses, Colors, FontColors, Spaces } from "../../shared/DesignTokens";
+
 export const ChatContainer = styled.div`
   width: 100%;
   display: flex;
@@ -22,7 +23,7 @@ export const Message = styled.div<{ $isUser?: boolean }>`
   border-radius: ${BorderRadiuses.ONE};
   border-bottom-left-radius: ${(p) => (p.$isUser ? BorderRadiuses.ONE : 0)};
   border-bottom-right-radius: ${(p) => (p.$isUser ? 0 : BorderRadiuses.ONE)};
-  border: 1px solid #ccc;
+  border: 1px solid #e4e7eb;
 `;
 
 export const InputArea = styled.form`
@@ -34,7 +35,8 @@ export const InputArea = styled.form`
 export const Input = styled.input`
   flex: 1;
   border-radius: ${BorderRadiuses.ONE};
-  border: 1px solid #ccc;
+  border: 1px solid #e4e7eb;
+  width: 100%;
   padding: ${Spaces.ONE};
 `;
 
@@ -67,7 +69,7 @@ export const OptionButton = styled.button`
   cursor: pointer;
   transition: 0.2s;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #e4e7eb;
 
   &:hover {
     background: #d4d4d4;

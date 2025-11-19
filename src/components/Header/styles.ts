@@ -6,6 +6,7 @@ export const HeroSection = styled.section`
     padding: ${Spaces.EIGHT} 0;
     display: flex;
     align-items: center;
+    margin-bottom: ${Spaces.FIVE};
 `;
 
 export const HeroContainer = styled.div`

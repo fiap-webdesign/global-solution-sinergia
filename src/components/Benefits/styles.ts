@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { Spaces, FontFamilies, Colors } from "../../shared/DesignTokens";
+import { Spaces, FontFamilies, BorderRadiuses } from "../../shared/DesignTokens";
 
 export const Section = styled.section`
-    background: ${Colors.GRAY};
-    padding: ${Spaces.SEVEN} 0;
+    margin-bottom: ${Spaces.FIVE};
     font-family: ${FontFamilies.ONE};
 `;
 
@@ -22,9 +21,9 @@ export const CardsGrid = styled.div`
 `;
 
 export const Card = styled.div`
-    background: #fcfcfc;
+    background: #FFF;
     padding: ${Spaces.FOUR};
-    border-radius: 20px;
+    border-radius: ${BorderRadiuses.TWO};
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 `;
 

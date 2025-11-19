@@ -1,10 +1,9 @@
 import { styled } from "styled-components";
-import { Colors, Spaces, FontFamilies , FontColors} from "../../shared/DesignTokens";
+import { Colors, Spaces, FontFamilies , FontColors, BorderRadiuses} from "../../shared/DesignTokens";
 
 // Estilizações da seção de testemunhos
 export const ContainerTestimonials = styled.section`
-    background: ${Colors.GRAY};
-    padding: ${Spaces.SEVEN} 0;
+    margin-bottom: ${Spaces.FIVE};
 
     .title { font-family: ${FontFamilies.ONE}; color: ${FontColors.PRIMARY}; font-size: 2rem; margin-bottom: ${Spaces.ONE}; }
     .subtitle { color: ${FontColors.PRIMARY}; margin-bottom: ${Spaces.FOUR}; text-align: center; }
@@ -23,5 +22,23 @@ export const ContainerTestimonials = styled.section`
 export const ContainerChatBot = styled.div`
     background-color: ${Colors.GREEN_OPACITY};
     padding-top: ${Spaces.TWO};
-    padding-bottom: ${Spaces.TWO};
+    padding-bottom: ${Spaces.TWO};  
+    margin-bottom: ${Spaces.FIVE};
+`;
+
+// Estilizações da seção Sobre SinergIA
+export const ContainerAbout = styled.section`
+  background-color: ${Colors.GREEN_OPACITY};
+  padding: ${Spaces.FOUR};
+  margin-bottom: ${Spaces.FIVE};
+  border-radius: ${BorderRadiuses.TWO};
+`;
+
+export const Divider = styled.hr`
+    border: none;
+    border-top: 4px solid ${Colors.GREEN};
+    max-width: 100px;
+    opacity: 1;
+    width: 100%;
+    margin: auto auto ${Spaces.FIVE};
 `;

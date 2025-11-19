@@ -4,7 +4,7 @@ import Benefits from "../../components/Benefits";
 import Footer from "../../components/Footer";
 import Newsletter from "../../components/Newsletter";
 import TestimonialCard from "../../components/TestimonialsCard";
-import { ContainerTestimonials, ContainerChatBot } from "./styles";
+import { ContainerTestimonials, ContainerChatBot, ContainerAbout, Divider } from "./styles";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -28,8 +28,23 @@ export default function Home() {
   return (
     <>
       <Header />
+
+      <ContainerAbout className="container">
+        <h2>O que é SinergIA?</h2>
+        <p>A plataforma SinergIA foi desenvolvida para ajudar profissionais iniciantes na jornada de ingresso no mercado de trabalho. Para isso, combinamos inteligência artificial com orientação personalizada, oferecendo suporte prático e direcionado para quem deseja iniciar ou se recolocar profissionalmente, permitindo que os usuários:</p>
+        <ul>
+          <li>Simulem entrevistas reais, recebendo feedback instantâneo.</li>
+          <li>Criem roadmaps de estudos personalizados, de acordo com a área de interesse.</li>
+          <li>Receba dicas e recomendações práticas para organizar a jornada de entrada no mercado de trabalho.</li>
+        </ul>
+        <p className="mb-0">A sinergIA transforma a tecnologia em uma verdadeira aliada estratégica, capaz de potencializar o aprendizado, fortalecer a confiança do usuário, ampliar oportunidades e apoiar o desenvolvimento pessoal.</p>
+      </ContainerAbout>
+
       <Benefits />
-      <AccordionFaq />
+
+      <ContainerChatBot id="chatbot">
+        <ChatBot />
+      </ContainerChatBot>   
 
       <ContainerTestimonials id="testimonials">
         <div className="container">
@@ -55,9 +70,9 @@ export default function Home() {
         </div>
       </ContainerTestimonials>
 
-      <ContainerChatBot id="chatbot">
-        <ChatBot />
-      </ContainerChatBot>
+       <AccordionFaq />
+
+        <Divider />
 
       <Newsletter />
       <Footer />

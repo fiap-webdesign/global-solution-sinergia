@@ -1,13 +1,8 @@
-// AccordionFaq.styles.ts
 import styled from "styled-components";
-import { Spaces, BorderRadiuses, FontFamilies, Colors } from "../../shared/DesignTokens";
-
-export const Accordion = styled.section`
-    background: ${Colors.GRAY};     
-`;
+import { Spaces, BorderRadiuses, FontFamilies } from "../../shared/DesignTokens";
 
 export const AccordionContainer = styled.div`
-    background: ${Colors.GRAY};
+    margin-bottom: ${Spaces.FIVE};
 
     .accordion-title {
         text-align: center;
@@ -17,7 +12,7 @@ export const AccordionContainer = styled.div`
 `;
 
 export const AccordionButton = styled.button`
-    border-radius: ${BorderRadiuses.ONE};
+    border-radius: ${BorderRadiuses.TWO};
     font-family: ${FontFamilies.ONE};
 `;
 
