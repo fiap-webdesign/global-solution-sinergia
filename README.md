@@ -3,6 +3,11 @@
 > Plataforma web voltada a ajudar estudantes de tecnologia em início de carreira a conquistarem sua primeira oportunidade profissional, indicando os conteúdos essenciais para cada área e oferecendo dicas para se sair bem em entrevistas de emprego.
 ---
 
+## 👤 Nossa Persona
+<img src="https://github.com/fiap-webdesign/global-solution-sinergia/blob/2e1efb9df3e555db6faac559814f014c355ac342/src/assets/images/persona.png?raw=true">
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 * React (Vite + TypeScript)
 * Styled Components
