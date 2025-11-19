@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors, Spaces, BorderRadiuses, FontFamilies } from "../../shared/DesignTokens";
+import { Colors, Spaces, BorderRadiuses, FontFamilies, FontColors } from "../../shared/DesignTokens";
 
 export const NavbarContainer = styled.header`
   nav {
@@ -15,7 +15,7 @@ export const NavbarContainer = styled.header`
   .brand-name {
     font-family: ${FontFamilies.ONE};
     font-size: 1.4rem;
-    color: ${Colors.TEXT};
+    color: ${FontColors.PRIMARY};
     font-weight: 300;
   }
 

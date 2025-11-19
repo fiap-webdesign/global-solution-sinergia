@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
-import { Colors, Spaces, FontFamilies } from "../../shared/DesignTokens";
+import { Colors, Spaces, FontFamilies , FontColors} from "../../shared/DesignTokens";
 
 // Estilizações da seção de testemunhos
 export const ContainerTestimonials = styled.section`
     background: ${Colors.GRAY};
     padding: ${Spaces.SEVEN} 0;
 
-    .title { font-family: ${FontFamilies.ONE}; color: ${Colors.TEXT}; font-size: 2rem; margin-bottom: ${Spaces.ONE}; }
-    .subtitle { color: ${Colors.TEXT}; margin-bottom: ${Spaces.FOUR}; text-align: center; }
+    .title { font-family: ${FontFamilies.ONE}; color: ${FontColors.PRIMARY}; font-size: 2rem; margin-bottom: ${Spaces.ONE}; }
+    .subtitle { color: ${FontColors.PRIMARY}; margin-bottom: ${Spaces.FOUR}; text-align: center; }
 
     .my-swiper { max-width: 960px; margin: 0 auto; }
 

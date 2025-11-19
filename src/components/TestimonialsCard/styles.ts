@@ -4,6 +4,7 @@ import {
   Spaces,
   BorderRadiuses,
   FontFamilies,
+  FontColors,
 } from "../../shared/DesignTokens";
 
 export const Card = styled.div`
@@ -28,19 +29,19 @@ export const Card = styled.div`
     font-weight: 600;
     font-size: ${Spaces.TWO};
     margin-bottom: ${Spaces.ONE_HALF};
-    color: ${Colors.TEXT};
+    color: ${FontColors.PRIMARY};
   }
 
   .course {
     font-size: ${Spaces.TWO};
-    color: ${Colors.TEXT};
+    color: ${FontColors.PRIMARY};
     margin-bottom: ${Spaces.THREE};
   }
 
   .text {
     font-size: ${Spaces.TWO};
     line-height: 1.6;
-    color: ${Colors.TEXT};
+    color: ${FontColors.PRIMARY};
     margin-bottom: ${Spaces.THREE};
   }
 
