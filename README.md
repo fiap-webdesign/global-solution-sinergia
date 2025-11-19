@@ -1,4 +1,4 @@
-# 📌 sinergIA
+# 📌 SinergIA
 
 > Plataforma web voltada a ajudar estudantes de tecnologia em início de carreira a conquistarem sua primeira oportunidade profissional, indicando os conteúdos essenciais para cada área e oferecendo dicas para se sair bem em entrevistas de emprego.
 ---
