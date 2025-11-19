@@ -15,7 +15,7 @@ export default async function handler(req: any, res: any) {
     const completion = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [{ role: "user", content: message }],
-      max_tokens: 120,
+      max_tokens: 800,
       temperature: 0.4,
     });
 
