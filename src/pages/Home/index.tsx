@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </ContainerTestimonials>
 
-      <ContainerChatBot>
+      <ContainerChatBot id="chatbot">
         <ChatBot />
       </ContainerChatBot>
 

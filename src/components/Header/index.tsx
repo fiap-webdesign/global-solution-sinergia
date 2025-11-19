@@ -24,7 +24,7 @@ export default function Header() {
                         </HeroSubtitle>
 
                         <HeroButtons>
-                            <a href="#" className="btn-primary">Comece a usar</a>
+                            <a href="#chatbot" className="btn-primary">Comece a usar</a>
                         </HeroButtons>
                     </div>
 

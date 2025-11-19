@@ -48,7 +48,7 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link highlight d-flex align-items-center" href="#start">
+                                <a className="nav-link highlight d-flex align-items-center" href="#chatbot">
                                     <FaRocket className="me-2" />
                                     Comece a usar
                                 </a>
