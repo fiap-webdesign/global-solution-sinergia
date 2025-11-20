@@ -50,7 +50,7 @@ export default function Home() {
           <div className="info">
             <h2 className="text-start">Como funciona</h2>
             <p className="mb-0 fw-semibold">Escolha uma opção pronta</p>
-            <p>Clique em “Simular entrevista” ou “Gerar roadmap” para iniciar automaticamente.</p>
+            <p>Clique em uma das opções disponíveis para iniciar uma conversa.</p>
 
             <p className="mb-0 fw-semibold">Ou comece digitando</p>
             <p className="mb-0">Escreva o que você precisa e o chatbot gera a resposta na hora.</p>
