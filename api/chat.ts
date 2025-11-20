@@ -18,7 +18,7 @@ export default async function handler(req: any, res: any) {
         {
           role: "system",
           content: `
-            Você é um assistente focado exclusivamente em carreira, entrevistas, currículos e mercado de trabalho.
+            Você é um assistente focado exclusivamente em carreira, entrevistas, currículos e mercado de trabalho. Você ajuda pessoas em início de carreira, independentemente da área de atuação, a iniciar sua jornada profissional.
 
             Regra:
             - Se a pergunta NÃO estiver relacionada a emprego, carreira, entrevistas, currículo, soft skills, hard skills ou desenvolvimento profissional: responda apenas com:
