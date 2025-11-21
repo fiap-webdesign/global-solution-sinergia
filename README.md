@@ -18,7 +18,7 @@
 ## 🌍 Site em Produção
 
 Veja o projeto rodando:
-🔗 [sinergIA](https://global-solution-sinergia.vercel.app/)
+🔗 [SinergIA](https://global-solution-sinergia.vercel.app/)
 
 ---
 

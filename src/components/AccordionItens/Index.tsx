@@ -1,8 +1,8 @@
 export const items = [
     {
         id: "1",
-        title: "O que é a sinergIA?",
-        content: "A sinergIA é uma plataforma inteligente criada para ajudar quem está entrando no mercado de trabalho, oferecendo suporte na preparação para entrevistas e no planejamento de estudos de forma prática e personalizada."
+        title: "O que é a SinergIA?",
+        content: "A SinergIA é uma plataforma inteligente criada para ajudar quem está entrando no mercado de trabalho, oferecendo suporte na preparação para entrevistas e no planejamento de estudos de forma prática e personalizada."
     },
     {
         id: "2",
@@ -21,7 +21,7 @@ export const items = [
     },
     {
         id: "5",
-        title: "O que diferencia a sinergIA de outras plataformas de preparação profissional?",
+        title: "O que diferencia a SinergIA de outras plataformas de preparação profissional?",
         content: "Unimos tecnologia avançada, acessibilidade e experiência do usuário para criar uma solução prática, inclusiva e inteligente que ajuda profissionais a se prepararem para o futuro."
     }
 ];

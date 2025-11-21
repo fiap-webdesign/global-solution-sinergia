@@ -23,7 +23,7 @@ export default function Home() {
     { img: img1, name: "Sarah M.", course: "Design @ Mackenzie", text: "A ferramenta me ajudou a organizar meu estudo e entender exatamente o que faltava para eu me sentir pronta para entrevistas.", stars: 5 },
     { img: img2, name: "Rebeca S.", course: "Ciência de Dados @ USP", text: "As simulações de entrevista foram realistas e me ajudaram a estruturar melhor minhas respostas. Ótimo para quem está recomeçando.", stars: 4 },
     { img: img3, name: "Natali S.", course: "Web Design @ FIAP", text: "O roadmap personalizado me guiou perfeitamente. Parei de perder tempo estudando coisas aleatórias!", stars: 5 },
-    { img: img4, name: "Stephanie C.", course: "Arquitetura e Urbanismo @ Instituto Mauá de Tecnologia", text: "Eu estava muito nervosa para minha primeira entrevista de estágio, e treinar com a sinergIA simplesmente me deixou mais calma e preparada!", stars: 5 },
+    { img: img4, name: "Stephanie C.", course: "Arquitetura e Urbanismo @ Instituto Mauá de Tecnologia", text: "Eu estava muito nervosa para minha primeira entrevista de estágio, e treinar com a SinergIA simplesmente me deixou mais calma e preparada!", stars: 5 },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function Home() {
             <li>Criem roadmaps de estudos personalizados, de acordo com a área de interesse.</li>
             <li>Receba dicas e recomendações práticas para organizar a jornada de entrada no mercado de trabalho.</li>
           </ul>
-          <p className="mb-0">A sinergIA transforma a tecnologia em uma verdadeira aliada estratégica, capaz de potencializar o aprendizado, fortalecer a confiança do usuário, ampliar oportunidades e apoiar o desenvolvimento pessoal.</p>
+          <p className="mb-0">A SinergIA transforma a tecnologia em uma verdadeira aliada estratégica, capaz de potencializar o aprendizado, fortalecer a confiança do usuário, ampliar oportunidades e apoiar o desenvolvimento pessoal.</p>
         </ContainerAbout>
       </section>
 

@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <FooterContent>
-                <FooterText>© 2025 sinergIA. Todos os direitos reservados.</FooterText>
+                <FooterText>© 2025 SinergIA. Todos os direitos reservados.</FooterText>
 
                 <FooterIcons>
                     {socialLinks.map(({ icon: Icon, url, name }, i) => (
